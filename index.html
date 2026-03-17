@@ -1,107 +1,181 @@
 <!DOCTYPE html>
-<html lang="kk">
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
-<title>Уақытты тиімді бөлу</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Будущее Казахстана</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-<h1>Уақытты тиімді бөлу</h1>
-<p id="time"></p>
+<header class="hero">
+  <div class="hero-content">
+    <h1>Будущее Казахстана</h1>
+    <p>Инновации • Технологии • Экология • Молодёжь</p>
+    <a href="#initiatives" class="hero-btn">Смотреть проекты</a>
+  </div>
 </header>
 
-<nav>
-<a href="#planner">Тапсырмалар</a>
-<a href="#calculator">Өнімділік</a>
-<a href="#pomodoro">Pomodoro</a>
-<a href="#tips">Кеңестер</a>
-<a href="#contact">Байланыс</a>
+<nav class="navbar">
+  <a href="#about">О сайте</a>
+  <a href="#problems">Проблемы и возможности</a>
+  <a href="#initiatives">Инициативы</a>
+  <a href="#priorities">Приоритеты</a>
+  <a href="#youth">Молодёжь</a>
+  <a href="#facts">Факты</a>
+  <a href="#contacts">Контакты</a>
 </nav>
 
-<section id="intro">
-<h2>Тайм менеджмент</h2>
-<p>
-Бұл веб-қосымша уақытты тиімді жоспарлауға көмектеседі.
-Сіз тапсырмаларды қосып, өнімділігіңізді есептеп,
-Pomodoro таймерін пайдалана аласыз.
-</p>
+<main>
+
+<section id="about" class="section">
+  <h2>О сайте</h2>
+  <p>
+    Этот сайт посвящён будущему Казахстана: развитию технологий, науки, экологии и молодёжных инициатив.
+    Мы показываем проекты и идеи, которые помогают стране двигаться вперёд.
+  </p>
+  <p>
+    Цель — вдохновить людей участвовать в развитии и показать возможности для прогресса.
+  </p>
 </section>
 
-<section id="planner">
+<section id="problems" class="section alt">
+  <h2>Проблемы и возможности</h2>
 
-<h2>Тапсырма жоспарлаушы</h2>
+  <div class="info-grid">
 
-<input id="taskInput" placeholder="Тапсырма енгізіңіз">
+    <div class="info-card">
+      <h3>Экология</h3>
+      <p>Сохранение природы, развитие возобновляемой энергетики.</p>
+    </div>
 
-<select id="category">
-<option>Оқу</option>
-<option>Жұмыс</option>
-<option>Спорт</option>
-<option>Демалыс</option>
-</select>
+    <div class="info-card">
+      <h3>Образование</h3>
+      <p>Подготовка IT-специалистов и научных кадров.</p>
+    </div>
 
-<button id="addTask">Қосу</button>
+    <div class="info-card">
+      <h3>Экономика</h3>
+      <p>Цифровизация, стартапы, инновационные предприятия.</p>
+    </div>
 
-<ul id="taskList"></ul>
+    <div class="info-card">
+      <h3>Социальное развитие</h3>
+      <p>Поддержка молодёжи и инновационных программ.</p>
+    </div>
 
+  </div>
 </section>
 
-<section id="calculator">
+<section id="initiatives" class="section">
+  <h2>Инициативы и проекты</h2>
 
-<h2>Өнімділік калькуляторы</h2>
+  <div class="projects-grid">
 
-<input type="number" id="work" placeholder="Жұмыс сағаты">
-<input type="number" id="study" placeholder="Оқу сағаты">
-<input type="number" id="fun" placeholder="Көңіл көтеру">
+    <div class="project-card blue">
+      <img src="images/project1.jpg" alt="Цифровой Казахстан">
+      <div class="project-content">
+        <h3>Цифровой Казахстан</h3>
+        <p>Внедрение цифровых технологий в образование, медицину и гос-сервисы.</p>
+        <span class="tag">Государственный проект • 2025</span>
+      </div>
+    </div>
 
-<button id="calc">Есептеу</button>
+    <div class="project-card green">
+      <img src="images/project2.jpg" alt="Зелёная энергия">
+      <div class="project-content">
+        <h3>Зелёная энергия</h3>
+        <p>Развитие солнечных и ветровых электростанций.</p>
+        <span class="tag">Экология • 2025</span>
+      </div>
+    </div>
 
-<p id="result"></p>
+    <div class="project-card purple">
+      <img src="images/project3.jpg" alt="Инновации в образовании">
+      <div class="project-content">
+        <h3>Инновации в образовании</h3>
+        <p>IT-направления, робототехника, научные программы.</p>
+        <span class="tag">Образование • 2025</span>
+      </div>
+    </div>
 
+  </div>
 </section>
 
-<section id="pomodoro">
+<section id="priorities" class="section">
+  <h2>Основные направления развития</h2>
 
-<h2>Pomodoro таймері</h2>
+  <div class="priorities-grid">
 
-<h3 id="timer">25:00</h3>
+    <div class="priority-card">
+      <h3>Цифровая экономика</h3>
+      <p>Развитие онлайн-сервисов, автоматизация и цифровые платформы.</p>
+    </div>
 
-<button id="start">Старт</button>
-<button id="pause">Пауза</button>
-<button id="reset">Қайта бастау</button>
+    <div class="priority-card">
+      <h3>Экологическое развитие</h3>
+      <p>Переход к «зелёной» энергетике и снижению выбросов.</p>
+    </div>
 
+    <div class="priority-card">
+      <h3>Образование будущего</h3>
+      <p>Инженерные школы, IT-направления, научные проекты.</p>
+    </div>
+
+  </div>
 </section>
 
-<section id="tips">
+<section id="youth" class="section">
+  <h2>Роль молодёжи в будущем Казахстана</h2>
 
-<h2>Уақытты басқару кеңестері</h2>
+  <div class="youth-grid">
 
-<ul>
-<li>Pomodoro – 25 минут жұмыс, 5 минут демалыс</li>
-<li>GTD – барлық тапсырмаларды жазып жүру</li>
-<li>80/20 ережесі – ең маңызды тапсырмаларға назар аудару</li>
-</ul>
+    <div class="youth-card">
+      <h3>IT и цифровые навыки</h3>
+      <p>Создание стартапов, приложений и цифровых решений.</p>
+    </div>
 
+    <div class="youth-card">
+      <h3>Наука и инженерия</h3>
+      <p>Исследования, робототехника, технопроекты.</p>
+    </div>
+
+    <div class="youth-card">
+      <h3>Социальные инициативы</h3>
+      <p>Участие в волонтёрских и образовательных программах.</p>
+    </div>
+
+  </div>
 </section>
 
-<section id="contact">
+<section id="facts" class="section alt">
+  <h2>Интересные факты и тенденции</h2>
 
-<h2>Байланыс</h2>
-
-<input id="name" placeholder="Аты">
-<input id="email" placeholder="Email">
-<textarea id="message" placeholder="Хабарлама"></textarea>
-
-<button id="send">Жіберу</button>
-
-<p id="formMsg"></p>
-
+  <ul class="facts-list">
+    <li>В стране активно развиваются IT-кластеры и технопарки.</li>
+    <li>Увеличивается доля возобновляемых источников энергии.</li>
+    <li>Поддерживаются молодёжные технологические инициативы.</li>
+  </ul>
 </section>
 
-<script src="script.js"></script>
+<section class="section quote">
+  <p>«Будущее Казахстана строится через образование, технологии и инициативную молодёжь»</p>
+</section>
+
+<section id="contacts" class="section alt">
+  <h2>Контакты</h2>
+  <div class="contacts-box">
+    <p>Email: <strong>info@123456</strong></p>
+    <p>Телефон: <strong>+7 777 77 77</strong></p>
+    <p>Telegram: <strong>@kaz7854</strong></p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2025 все права защищены</p>
+</footer>
 
 </body>
 </html>
