@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title>Уақытты тиімді бөлу</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Уақытты тиімді бөлу</h1>
+<p id="time"></p>
+</header>
+
+<nav>
+<a href="#planner">Тапсырмалар</a>
+<a href="#calculator">Өнімділік</a>
+<a href="#pomodoro">Pomodoro</a>
+<a href="#tips">Кеңестер</a>
+<a href="#contact">Байланыс</a>
+</nav>
+
+<section id="intro">
+<h2>Тайм менеджмент</h2>
+<p>
+Бұл веб-қосымша уақытты тиімді жоспарлауға көмектеседі.
+Сіз тапсырмаларды қосып, өнімділігіңізді есептеп,
+Pomodoro таймерін пайдалана аласыз.
+</p>
+</section>
+
+<section id="planner">
+
+<h2>Тапсырма жоспарлаушы</h2>
+
+<input id="taskInput" placeholder="Тапсырма енгізіңіз">
+
+<select id="category">
+<option>Оқу</option>
+<option>Жұмыс</option>
+<option>Спорт</option>
+<option>Демалыс</option>
+</select>
+
+<button id="addTask">Қосу</button>
+
+<ul id="taskList"></ul>
+
+</section>
+
+<section id="calculator">
+
+<h2>Өнімділік калькуляторы</h2>
+
+<input type="number" id="work" placeholder="Жұмыс сағаты">
+<input type="number" id="study" placeholder="Оқу сағаты">
+<input type="number" id="fun" placeholder="Көңіл көтеру">
+
+<button id="calc">Есептеу</button>
+
+<p id="result"></p>
+
+</section>
+
+<section id="pomodoro">
+
+<h2>Pomodoro таймері</h2>
+
+<h3 id="timer">25:00</h3>
+
+<button id="start">Старт</button>
+<button id="pause">Пауза</button>
+<button id="reset">Қайта бастау</button>
+
+</section>
+
+<section id="tips">
+
+<h2>Уақытты басқару кеңестері</h2>
+
+<ul>
+<li>Pomodoro – 25 минут жұмыс, 5 минут демалыс</li>
+<li>GTD – барлық тапсырмаларды жазып жүру</li>
+<li>80/20 ережесі – ең маңызды тапсырмаларға назар аудару</li>
+</ul>
+
+</section>
+
+<section id="contact">
+
+<h2>Байланыс</h2>
+
+<input id="name" placeholder="Аты">
+<input id="email" placeholder="Email">
+<textarea id="message" placeholder="Хабарлама"></textarea>
+
+<button id="send">Жіберу</button>
+
+<p id="formMsg"></p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
